@@ -27,12 +27,12 @@ String RGBStr;
 bool light;
 
 /*CONFIG MQTT CONNECTION*/
-const char *ssid = "ACLAB";
-const char *password = "ACLAB2023";
+const char *ssid = "your_ssid";
+const char *password = "password";
 const char *mqttServer = "io.adafruit.com";
 const int mqttPort = 1883;
-const char *mqttUser = "hieuduongk22bk";
-const char *mqttPassword = "aio_CgOe77qUN0Gdvfnb0sqMCTXErAdS";
+const char *mqttUser = "mqttUser";
+const char *mqttPassword = "mqttPassword";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -43,14 +43,14 @@ Servo servo1;
 Adafruit_NeoPixel NeoPixel(NUM_PIXELS, PIN_NEO_PIXEL, NEO_GRB + NEO_KHZ800);
 
 /*FEED*/
-const char *mqttTopic1 = "hieuduongk22bk/feeds/fan";
-const char *mqttTopic2 = "hieuduongk22bk/feeds/temp";
-const char *mqttTopic3 = "hieuduongk22bk/feeds/humid";
-const char *mqttTopic4 = "hieuduongk22bk/feeds/pump";
-const char *mqttTopic5 = "hieuduongk22bk/feeds/light_sensor";
-const char *mqttTopic6 = "hieuduongk22bk/feeds/servo";
-const char *mqttTopic7 = "hieuduongk22bk/feeds/soil";
-const char *mqttTopic8 = "hieuduongk22bk/feeds/rgbled";
+const char *mqttTopic1 = "mqttUser/feeds/fan";
+const char *mqttTopic2 = "mqttUser/feeds/temp";
+const char *mqttTopic3 = "mqttUser/feeds/humid";
+const char *mqttTopic4 = "mqttUser/feeds/pump";
+const char *mqttTopic5 = "mqttUser/feeds/light_sensor";
+const char *mqttTopic6 = "mqttUser/feeds/servo";
+const char *mqttTopic7 = "mqttUser/feeds/soil";
+const char *mqttTopic8 = "mqttUser/feeds/rgbled";
 
 //------------------- WIFI ----------------------------------
 void wifi_connect()
